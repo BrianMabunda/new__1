@@ -1,7 +1,7 @@
 # Importing flask module in the project is mandatory
 # An object of Flask class is our WSGI application.
 from flask import Flask, request, render_template
-import pickle
+# import pickle
 from keras.models import load_model
 from flask_cors import CORS
 
@@ -21,13 +21,13 @@ CORS(app, resources={r"*": {"origin": "*"}})
 def hello_world():
     summary=""
     
-    return render_template("Home.html")
+    return render_template("Model in normal operation")
 
 
 @app.route('/TestPrediction')
 # ‘/’ URL is bound with hello_world() function.
 def cancer():
-    return render_template("index.html")
+    return render_template("model for testing")
 
 
 
