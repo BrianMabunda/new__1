@@ -1,0 +1,3 @@
+pic_path="C:/Users/Brian Mabunda/Pictures/"
+
+model oputput=["Not Ripe","Ripe"]
